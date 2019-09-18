@@ -1,0 +1,153 @@
+/* this is where all of your CSS styles go */
+
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+.grid_container {
+    width: 500px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    top: 48%; /* for optical centering */
+    margin-top: -120px;
+    margin-left: -180px;
+}
+.hidden {
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    margin-top: -200px;
+    margin-left: -180px;
+    z-index: -1;
+}
+
+.awake {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 5em;
+    float: left;
+    margin-left: 5px;
+}
+
+.asleep {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 6em;
+    float: left;
+    margin-left: 5px;
+    opacity: 0;
+}
+
+
+@keyframes a_move {
+    0% { top: 0px; opacity: 1; }
+    100% { top: -170px; opacity: 0; }
+}
+
+.awake.a {
+    position: relative;
+    animation: a_move 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes a_slide {
+    100% { top: 0px; opacity: 1; }
+    0% { top: -170px; opacity: 0; }
+}
+
+.asleep.a {
+    position: relative;
+    animation: a_slide 2s;
+    animation-fill-mode: forwards;
+    animation-delay: .75s;
+}
+
+
+@keyframes e_move {
+    0% { left: 0px; opacity: 1; }
+    100% { left: 220px; opacity: 0; }
+}
+
+.awake.e {
+    position: relative;
+    animation: e_move 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes e_slide {
+    100% { left: 0px; opacity: 1; transform: rotate(360deg); }
+    0% { left: 270px; opacity: 0; transform: rotate(0deg); }
+}
+
+.asleep.e {
+    position: relative;
+    animation: e_slide 2s;
+    animation-fill-mode: forwards;
+    animation-delay: .75s;
+}
+
+@keyframes w_move {
+    0% { top: 0px; left: 0px; opacity: 1}
+    25% { top: 150px; left: 0px; }
+    50% { top: 150px; left: 300px; }
+    100% { top: -300px; left: 300px; opacity: 0}
+
+}
+
+.awake.w {
+    position: relative;
+    animation: w_move 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes s_slide {
+    100% { top: 0px; opacity: 1; }
+    0% { top: 150px; opacity: 0; }
+}
+
+.asleep.s {
+    position: relative;
+    animation: s_slide 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes l_slide {
+    100% { top: 0px; opacity: 1; transform: rotate(360deg);}
+    50% { top: 150px; left: 0px; transform: rotate(0deg);}
+    0% { top: 150px; left: 300px; opacity: 0; }
+}
+
+.asleep.l {
+    position: relative;
+    animation: l_slide 2s cubic-bezier(0,0,1,1);
+    animation-fill-mode: forwards;
+    animation-delay: 1.75s;
+}
+
+@keyframes p_slide {
+    100% { left: 0px; opacity: 1; }
+    0% { left: -240px; opacity: 0; }
+}
+
+.asleep.p {
+    position: relative;
+    animation: p_slide 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes k_slide {
+    0% { top: 0px; opacity: 1; }
+    100% { top: 300px; opacity: 0; }
+}
+
+.awake.k {
+    position: relative;
+    animation: k_slide 2s;
+    animation-fill-mode: forwards;
+}
+
