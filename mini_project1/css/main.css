@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Elvish';
+    src: url(../fonts/elvish_ring.ttf);
+}
+.container {
+    background-color: black;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 20px;
+    left: 300px;
+}
+h1 {
+    font-family: Garamond, serif;
+    font-weight: 100;
+    font-size: 46px;
+    text-align: center;
+    color: white;
+    letter-spacing: .05em;
+}
+
+.bird {
+    height: 45px;
+    position: absolute;
+    left: 138px;
+    top: 150px;
+    animation: bird_move 5s infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bird_move {
+    0%, 100% { left: 138px; }
+    50% { left: 50px; }
+    75% { left: 230px; }
+}
+
+.moon {
+    height: 45px;
+    position: absolute;
+    left: 50px;
+    top: 200px;
+    animation: moon_move 4s infinite;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes moon_move {
+    0%, 100% { top: 200px; opacity: 1;}
+    50% { top: 250px; opacity: .2; transform: scaleX(-1)}
+
+}
+
+
+.star {
+    height: 45px;
+    position: absolute;
+    left:300px;
+    top: 200px;
+    animation: star_move 4s infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes star_move {
+    0%, 100% { left: 300px; top:200px; transform: rotate(0deg); opacity: 1; }
+    50% { left: 330px; top:230px; transform: rotate(360deg); opacity: .2; }
+}
+
+.tower1 {
+    height: 170px;
+    position: absolute;
+    left: 20px;
+    top: 275px;
+}
+
+.tower2 {
+    height: 170px;
+    position: absolute;
+    left:300px;
+    top: 275px;
+}
+
+.land {
+    width: 325px;
+    position: absolute;
+    left: 0;
+    top: 423px;
+}
+
+h1.author {
+    padding-top: 320px;
+
+    width: 400px;
+    height: 200px;
+    animation: type 5s steps(100);
+    /*steps 100 makes the slide more choppy*/
+    white-space: nowrap;
+    /*keeps the text as one line*/
+    overflow: hidden;
+}
+
+@keyframes type {
+    0% { width: 0; text-align: center; }
+    100% { width: 400px;  text-align: center;}
+}
+
+
+.circle {
+    width: 145px;
+    height: 145px;
+    background: white;
+    border-radius: 50%;
+    border: 15px solid red;
+    position: absolute;
+    left: 115px;
+    top: 232px;
+    /*z-index: 2;*/
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.closed {
+    width: 145px;
+    height: 145px;
+    position: absolute;
+    background: blue;
+    left: 115px;
+    top: 232px;
+    z-index: 1;
+}
+
+.closed span {
+    display: block;
+    width: 100%;
+    height: 0%;
+    background: red;
+    border-radius: 50%;
+    transition: 0.4s all;
+}
+
+
+.circle:hover .closed span {
+    height: 100%;
+}
+
+h2 {
+    font-family: Garamond, serif;
+    font-weight: 100;
+    font-size: 15px;
+    text-align: center;
+    color: darkred;
+    letter-spacing: .2em;
+    line-height: 1.5em;
+    position: absolute;
+    top: 531px;
+    left: 70px;
+}
+
+h3 {
+    font-family: Elvish, serif;
+    font-size: 20px;
+    text-align: center;
+    color: darkgoldenrod;
+    position: absolute;
+    left: 96px;
+    top: 250px;
+    filter: blur(0px);
+    transition: filter 0.5s;
+}
+
+
+h3:hover {
+    filter: blur(5px);
+    transition: filter 0.5s;
+}
+
+.eye {
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 15px red solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.iris {
+    width: 72px;
+    height: 72px;
+    background: #222f3e;
+    border-radius: 50%;
+    border: 30px solid #ef888c;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lid {
+    width: 300px;
+    height: 160px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*background: red;*/
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+
+}
+
+.lid span {
+    display: block;
+    width: 100%;
+    height: 0%;
+    background: red;
+    border-radius: 50%;
+    transition: 0.4s all;
+}
+
+.eye:hover .lid span {
+    height: 100%;
+}
