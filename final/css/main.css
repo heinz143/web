@@ -1,0 +1,367 @@
+.nav {
+    padding-top: 60px;
+    font-family: Oswald, sans-serif;
+    letter-spacing: .5em;
+    background: #F7F44A;
+}
+.main {
+    width: 1400px;
+}
+.home {
+    font-size: 1.8em;
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    color: black;
+}
+
+.nav-link {
+    color: black;
+}
+
+a.nav-link:hover {
+    color: lightgrey;
+}
+
+h1, h2, h3 {
+    font-family: Oswald, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    letter-spacing: .2em;
+    font-weight: 100;
+}
+
+
+
+                                    /*     WHAT PAGE     */
+
+
+
+.what {
+    background-color: #45B076;
+    margin: 45px 450px;
+    color: white;
+    padding: 15px;
+    font-size: 1.3em;
+}
+
+
+p, ol, ul {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6em;
+}
+
+hr {
+    border-top: 3px solid #45B076;
+}
+
+.diets {
+    margin: 0 150px 150px 150px;
+    width: 1000px;
+}
+
+.right {
+    width: 550px;
+    margin: 20px 0 0 450px;
+    background-color: white;
+}
+
+.title {
+    font-size: 1.3em;
+    font-family: Oswald, sans-serif;
+    text-align: right;
+    letter-spacing: 0.05em;
+    padding: 60px 30px 0 0;
+}
+
+
+.title {
+    animation: animate 2s forwards;
+}
+
+@keyframes animate {
+    0% { left: 100px; color: black; }
+    100% { left: 300px; color: #F2788E; }
+}
+
+
+.title.left {
+    text-align: left;
+}
+
+.left {
+    width: 550px;
+    margin-top: 20px;
+    background-color: white;
+
+}
+
+.plant {
+    position: absolute;
+    left: 275px;
+    top: 375px;
+    z-index: -1;
+}
+
+hr.line {
+    border-top: 1px solid #F2788E;
+}
+
+.vegetarian {
+    position: absolute;
+    left: 800px;
+    top: 625px;
+    z-index: -1;
+}
+
+.vegan {
+    position: absolute;
+    left: 275px;
+    top: 860px;
+    z-index: -1;
+}
+
+.fish {
+    position: absolute;
+    left: 790px;
+    top: 1110px;
+    z-index: -1;
+}
+                                /*     HOW PAGE       */
+
+
+.how {
+    background-color: #F88403;
+    margin: 45px 450px;
+    color: white;
+    padding: 15px;
+    font-size: 1.3em;
+}
+
+.beginners {
+    margin: 0 200px;
+}
+
+.unit {
+    position: relative;
+}
+
+.unit:nth-child(1) {
+    left: 0;
+}
+
+.unit:nth-child(2) {
+    left: 50px;
+}
+
+.unit:nth-child(3) {
+    left: 0;
+}
+
+.unit:nth-child(4) {
+    left: 150px;
+}
+
+.unit:nth-child(5) {
+    left: 40px;
+}
+
+.unit:nth-child(6) {
+    left: 0;
+}
+
+.unit:nth-child(7) {
+    left: 60px;
+}
+
+.unit:nth-child(8) {
+    left: 10px;
+}
+
+.numbers {
+    font-size: 5em;
+    color: #F2788E;
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+}
+
+.tips {
+    position: relative;
+    left: 50px;
+    padding: 30px 0 5px 0;
+}
+
+.recipes {
+    background-color: #F88403;
+    margin: 125px 450px 45px 450px;
+    color: white;
+    padding: 15px;
+    font-size: 1.3em;
+}
+
+.medi {
+    font-size: 1.3em;
+    font-family: Oswald, sans-serif;
+    text-align: right;
+    letter-spacing: 0.05em;
+    padding-top: 30px;
+    width: 1200px;
+}
+
+hr#medi {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #45B076;
+    margin: 1em 0;
+    padding: 0;
+    width: 800px;
+    position: absolute;
+    left: 50px;
+    top: 1190px;
+}
+
+.spaghetti {
+    width: 715px;
+    display: inline-block;
+    float: left;
+    margin: 50px;
+}
+
+.ingredients {
+    display: inline-block;
+    width: 450px;
+    padding-top: 45px;
+}
+
+hr#ingredients {
+    border-top: 1px solid #45B076;
+    width: 250px;
+    position: absolute;
+    top: 1377px;
+    left: 953px;
+}
+
+.instructions {
+    display: inline-block;
+    float: left;
+    padding: 0 100px;
+    width: 1100px;
+    margin: 0 100px 150px 100px;
+}
+
+hr#instructions {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #45B076;
+    margin: 1em 0;
+    padding: 0;
+    width: 400px;
+    position: absolute;
+    top: 1804px;
+    left: 350px;
+}
+ol, ul {
+    line-height: 2em;
+}
+
+
+                                /*       WHY PAGE         */
+
+h3#why {
+    background-color: #60B1E2;
+    margin: 45px 450px;
+    color: white;
+    padding: 15px;
+    font-size: 1.3em;
+}
+
+h3#personal {
+    background-color: #60B1E2;
+    margin: 200px 450px 0 450px;
+    color: white;
+    padding: 15px;
+    font-size: 1.3em;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.reason {
+    padding: 30px;
+    width: 700px;
+    /*display: block;*/
+    float: left;
+}
+
+#firstsquare {
+    border-right: 2px solid #F88403;
+    border-top: 2px solid #F88403;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 40px 0 0 40px;
+}
+
+#secondsquare {
+    border-left: 2px solid #F88403;
+    border-top: 2px solid #F88403;
+    width: 150px;
+    height: 100px;
+    margin: 85px 0;
+    position: absolute;
+    top: 700px;
+    left: 300px;
+}
+
+#fourthsquare {
+    border-right: 2px solid #F88403;
+    border-top: 2px solid #F88403;
+    width: 300px;
+    height: 150px;
+    display: inline-block;
+    margin: 60px 0 0 0;
+}
+
+#fifthsquare {
+    border-left: 2px solid #F88403;
+    border-top: 2px solid #F88403;
+    width: 200px;
+    height: 100px;
+    margin: 85px 0;
+    position: absolute;
+    top: 1800px;
+    left: 250px;
+}
+
+img.hunger {
+    float: left;
+    display: block;
+    width: 350px;
+    padding: 20px;
+}
+
+img.forest {
+    width: 350px;
+    padding: 20px;
+}
+
+img.weight {
+    width: 350px;
+    padding: 20px;
+    display: block;
+    float: left;
+}
+
+img.blood {
+    width: 350px;
+    padding: 20px;
+    display: block;
+
+}
